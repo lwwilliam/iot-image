@@ -22,12 +22,11 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
- name: will42
+  name: will42
 spec:
- type: NodePort
- ports:
-   - port: 8888
-     targetPort: 8888
-     nodePort: 8888
- selector:
-   app: will42
+  type: NodePort
+  ports:
+    - port: 8888
+      targetPort: 8888
+  selector:
+    app: will42
